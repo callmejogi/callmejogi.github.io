@@ -39,166 +39,17 @@
 
 @import 'variables';
 
-@mixin link{
-    text-decoration: none;
-    display: block;
-    border: none;
-}
-
-@mixin mar{
-    max-width: $default_size;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@mixin flex {
-    display: flex;
-}
+@import 'mixin';
 
 body{
     font-family: $main_font;
 }
 
-.header{
-    @include mar;
-    @include flex;
-    align-items: center;
-    justify-content: space-between;
-}
+@import 'header.scss';
 
 .container{
     background-image:linear-gradient(90deg, #323264, #A54B5F)
 }
 
-.header__icon{
-    @include link;
-    padding-left: 10px;
-    padding-top: 50px;
-}
 
-.header__logo{
-    border: none;
-    height: 100%;
-}
-
-.header__link{
-    @include link
-}
-
-.header__link_adress{
-    color: $default_color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.header__link_tel{
-    color: $default_color;
-    line-height: 19px;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.header__list{
-    @include flex;
-}
-
-.header__item_dotted{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.header__item_nav{
-    margin-right: 15px;
-    &:last-child{
-        margin-right: 0;
-    }
-}
-
-.header__menu{
-    @include flex;
-    justify-content: flex-end;
-    padding-top: 16px;
-}
-
-.header__link_bot{
-    color: $default_color;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.header__nav{
-    padding-top: 56px;
-    padding-right: 10px;
-}
-
-@media (max-width: 1289px){
-    .header{
-        width: 100%;
-    }
-
-    .container{
-        padding: 20px 10px;
-    }
-
-    .header__nav{
-        padding-top: 0;
-    }
-
-    .header__logo{
-        padding-top: 0;
-        width: auto;
-    }
-
-    .header__link{
-        width: auto;
-    }
-
-    .header__icon{
-        padding-top: 0;
-    }
-}
-
-@media (max-width: 767px){
-    .header__menu{
-        display: none;
-    }
-
-    .header__link:not(.header__link_mobile){
-        display: none;
-    }
-
-    .header__item_dotted{
-        display: none;
-    }
-
-    .header{
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-    .header__logo{
-        width: 100%;
-        max-height: 31px;
-    }
-
-    .header__icon{
-        width: auto;
-        max-width: 208px;
-    }
-
-    .header__nav{
-        padding-left: 10px;
-        padding-bottom: 10px;
-    }
-
-    .header__link_tel{
-        color: #B3B3BA;
-    }
-
-    .header__list{
-        justify-content: space-between;
-    }
-
-}
+@import 'media';

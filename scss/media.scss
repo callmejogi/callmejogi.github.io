@@ -1,0 +1,70 @@
+@media (max-width: 1289px){
+    .header{
+        width: 100%;
+
+        &__nav{
+            padding-top: 0;
+        }
+
+        &__logo{
+            padding-top: 0;
+            width: auto;
+        }
+
+        &__link{
+            width: auto;
+        }
+
+        &__icon{
+            padding-top: 0;
+        }
+
+    }
+
+    .container{
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 767px){
+    .header{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        &__menu{
+            display: none;
+        }
+
+        &__link:not(.header__link_mobile){
+            display: none;
+        }
+
+        &__item_dotted{
+            display: none;
+        }
+
+        &__logo{
+            width: 100%;
+            max-height: 31px;
+        }
+
+        &__icon{
+            width: auto;
+            max-width: 208px;
+        }
+
+        &__nav{
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        &__link_tel{
+            color: #B3B3BA;
+        }
+
+        &__list{
+            justify-content: space-between;
+        }
+    }
+
+}

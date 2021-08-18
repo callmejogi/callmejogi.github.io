@@ -1,0 +1,88 @@
+.header{
+    @include mar;
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon{
+        @include link;
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    &__logo{
+        border: none;
+        height: 100%;
+    }
+
+    &__link{
+        @include link
+    }
+
+    &__link_adress{
+        color: $default_color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__link_tel{
+        color: $default_color;
+        line-height: 19px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__item_dotted{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__list{
+        @include flex;
+        align-items: center;
+    }
+
+    &__item_nav{
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__menu{
+        @include flex;
+        justify-content: flex-end;
+        padding-top: 16px;
+    }
+
+    &__link_bot{
+        color: $default_color;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__nav{
+        padding-top: 56px;
+        padding-right: 10px;
+    }
+
+    &__lang_active{
+        background-color:#F0145A;
+        border-radius: 8px;
+        background-position: center;
+    }
+
+    &__lang{
+        @include link;
+        font-weight: 700;
+        font-size: $size_s;
+        line-height: 14;
+        letter-spacing: 0.1em;
+        color: $default_color;
+        margin-right: 5px;
+    }
+
+
+}
