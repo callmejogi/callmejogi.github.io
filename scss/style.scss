@@ -48,7 +48,16 @@ body{
 @import 'header.scss';
 
 .container{
-    background-image:linear-gradient(90deg, #323264, #A54B5F)
+    background-image:$background_def;
+
+
+    &__content{
+        background-image: url(../images/pet.svg),  linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+        background-repeat: no-repeat,no-repeat;
+        background-position: center,bottom center;
+        background-size: auto,100% 200px;
+        min-height: 100vh;
+    }
 }
 
 
