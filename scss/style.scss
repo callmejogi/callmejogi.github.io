@@ -50,50 +50,169 @@ body{
 @import 'header.scss';
 
 .container{
-    background-image:$background_def;
+    background-image: $gradient_b,
+    url(../images/pet.svg),
+    $background_def;
+    background-position: bottom center,center,center;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: 100% 600px,auto,auto;
     min-height: 100vh;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:auto;
 
     &__content{
-        background-image:url(../images/pet.svg);
-        background-repeat:no-repeat;
-        background-position:top center;
-        background-size:auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 63px;
+        margin-top: 243px;
     }
 
     &__heading{
         font-size: 38px;
-        padding-top: 180px;
         line-height: 45px;
         text-align: center;
         color: $default_color;
     }
 
-    &__gradiend-bot{
-        background-image:$gradient_b;
-        background-position:top center;
-        background-repeat:no-repeat;
-        padding-top: 290px;
-        width: 100%;
-        height: 220px;
-        display: flex;
-        justify-content: center;
-    }
-
     &__scroll-down{
+        margin-top: 290px;
         transition: 1s;
         &:hover{
             opacity: .5;
         }
     }
-
 }
 
+.dropbox{
+    @include mar;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: $grad_super-soft;
+    background-position: center;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    margin-bottom: 50px;
+
+
+    &__scroll-item{
+        border-right: 4px solid #E6E6F0;
+        padding-right: 40px;
+        padding-top: 20px;
+        &:first-child{
+            padding-top:0;
+        }
+        &:hover{
+            border-right: 4px solid #F0145A;
+        }
+    }
+
+    &__heading{
+        font-size: 32px;
+        line-height: 38px;
+        color: $default_color;
+        font-weight: 500;
+    }
+
+    &__paragraph{
+        font-size: 21px;
+        line-height: 30px;
+        color: $default_color;
+        font-weight: 300;
+    }
+
+    &__scroll-menu{
+        width: 50%;
+    }
+
+    &__heading{
+        margin-bottom: 20px;
+    }
+
+    &__experience{
+        width: 600px;
+        margin-left: 40px;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    &__services{
+        margin-top: 80px;
+    }
+
+    &__services-link{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        color: $color_grey;
+        @include link;
+        text-align:center
+    }
+
+    &__services_arrow-link{
+        display: flex;
+        align-items: center;
+    }
+
+    &__services-heading{
+        font-size: 42px;
+        line-height: 50px;
+        @include pink-text;
+        font-weight: 700;
+        margin-bottom: 75px;
+    }
+
+    &__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__before:before{
+        content: "";
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        background-color:#CACADB;
+        right: 20px;
+        bottom: -10px;
+    }
+
+    &__after:after{
+        content: "";
+        position: absolute;
+        width: calc(100% - 80px);
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        background-color:#E7E7F2;
+        right: 40px;
+        bottom: -20px;
+    }
+}
+
+label {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    color: $color_grey;
+    @include link;
+    text-align: right;
+    cursor: pointer;
+    width: auto;
+}
+
+input:checked ~ label{
+    @include pink-text;
+}
+
+.swiper-container{
+    display: none;
+}
+
+@import 'card';
 
 @import 'media';

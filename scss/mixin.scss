@@ -13,3 +13,15 @@
 @mixin flex {
     display: flex;
 }
+
+@mixin arrow-link{
+    display: flex;
+    align-items: center;
+}
+
+@mixin pink-text{
+    background: $text_pink ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

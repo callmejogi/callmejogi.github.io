@@ -1,0 +1,24 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 58px;
+    
+    &__icon{
+        margin-bottom: 20px;
+    }
+
+    &__title{
+        font-size: 24px;
+        line-height: 28px;
+        color:$blue;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    &__article{
+        font-size: 18px;
+        line-height: 26px;
+        color:$default_color;
+    }
+}

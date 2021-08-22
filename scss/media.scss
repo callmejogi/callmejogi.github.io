@@ -25,6 +25,28 @@
     .container{
         padding: 20px 10px;
     }
+
+    .box{
+        padding: 20px 10px;
+
+        &__heading{
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        &__paragraph{
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__experience{
+            max-width: 300px;
+        }
+    }
+
+    label{
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 767px){
@@ -97,25 +119,141 @@
     }
 
     .container{
+        background-image: $gradient_b,
+        url(../images/p.svg),
+        $background_def;
+        background-position: bottom center,bottom right,center;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-size: 100% 600px,auto,auto;
+
         &__content{
-            background-image: url(../images/p.svg);
-            background-position-x: right;
-            background-size: auto;
+            padding-top: 138px;
+            margin-top: 0;
         }
 
-        &__gradiend-bot{
-            padding-top: 0;
-            margin-top: 100px;
-            justify-content: flex-end;
-            align-items: center;
-            flex-direction: column;
+        &__scroll-down{
+            margin-top: 201px;
         }
 
         &__heading{
-            padding-top: 40px;
             text-align: center;
+            padding-top: 0;
         }
     }
 
+    .box{
+        flex-direction: column;
+        align-items: flex-start;
+        &__scroll-menu{
+            width: auto;
+        }
+
+        &__scroll-item{
+            border: none;
+            text-align: left;
+            &:hover{
+                border: none;
+            }
+        }
+        
+        &__scroll-item{
+            display: none;
+        }
+
+        &__experience{
+            width: auto;
+            margin-left: 0;
+            margin-top: 10px;
+            display: none;
+        }
+
+        &__paragraph{
+            padding-bottom: 20px;
+        }
+
+        &__card{
+            flex-direction: column;
+        }
+
+        &__services{
+            margin-top: 45px;
+        }
+
+        &__services-heading{
+            margin-bottom: 20px;
+        }
+    }
+
+    label{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        text-align: left;
+    }
+
+    .swiper-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 400%;
+        max-height: 300px;
+        padding-bottom: 36px;
+        &.swiper-pagination-bullet-active{
+            background-color: #24A3FF;
+        }
+    }
+
+    .swiper-pagination-bullet{
+        width: 16px;
+        height: 16px;
+        background-color:#24A3FF;
+    }
+
+    .swiper-wrapper{
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .swiper-pagination{
+        width: 100%;
+    }
+
+    label{
+        background: $text_pink ;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card{
+        width: auto;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        margin-bottom: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__title{
+            font-size: 18px;
+            line-height: 21px;
+            margin-left: 10px;
+        }
+
+        &__article{
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &__icon-image{
+            max-width: 64px;
+            max-height:64px;
+        }
+
+        &__with{
+            display: flex;
+            align-items: center;
+        }
+    }
 
 }
