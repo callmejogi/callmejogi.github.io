@@ -25,3 +25,20 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin hot-red-text{
+    background: $hot_red-gr;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin blue-effect{
+    &:hover{
+        color: #0085FF;
+    }
+
+    &:active{
+        color: #006CCF;
+    }
+}
