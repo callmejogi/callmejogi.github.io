@@ -97,6 +97,66 @@
         &__title-chief{
             display: none;
         }
+
+        &__one-box{
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__cases{
+            max-width: 100%;
+            border:1px solid white;
+            margin-top: 30px;
+        }
+
+        &__drop-box{
+            &_tall{
+                margin-top: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &_upright{
+                margin-top: 0;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &_mini{
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &_center{
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &_right{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &__drop{
+            &-heading{
+                padding-top: 20px;
+            }
+
+            &-heading_high{
+                margin-top: 0;
+            }
+        }
+
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item{
+            width: 33%;
+        }
+
     }
 }
 
@@ -313,6 +373,40 @@
             font-size: 32px;
             line-height: 38px;
         }
+
+        &__drop-heading{
+            font-size: 18px;
+            line-height: 21px;
+            padding-bottom: 10px;
+        }
+
+        &__item{
+            width: 50%;
+        }
+
+
+
+        &__link_blue{
+            padding-top: 28px;
+            padding-bottom: 27px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        &__link_biz{
+            padding-top: 32px;
+            padding-bottom: 31px;
+            padding-right: 9px;
+            padding-left: 10px;
+        }
+
+        &__link_tap{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 13px;
+            padding-left: 14px;
+        }
+
     }
 
     .slider-wrapper{

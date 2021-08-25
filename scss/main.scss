@@ -65,4 +65,208 @@
     &__title-chief_mob{
         display: none;
     }
+
+    &__cases{
+        background-color: $grey_bg;
+        margin-top: 41px;
+        border: 1px solid #FFFFFF;
+        max-width: 433px;
+        &-link{
+            @include link;
+            color:#F0145A;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            padding: 20px 20px;
+        }   
+    }
+
+    &__one-box{
+        display: flex;
+        flex-direction: column;
+        max-width: 423px;
+    }
+
+    &__drop-box{
+        background-color:$grey_bg;
+        border: 1px solid #FFFFFF;
+    }
+
+    &__drop{
+        &-heading{
+            font-size: 24px;
+            line-height: 28px;
+            padding: 48px 20px 20px 20px;
+            color: $color_main-soft;
+            font-weight: 500;
+        }
+
+        &-paragraph{
+            font-size: 18px;
+            line-height: 26px;
+            color: $color_grey;
+            padding: 0px 20px 20px 20px;
+        }
+    }
+
+    &__section{
+        display: flex;
+        flex-wrap: wrap;
+        @include mar;
+        justify-content: center;
+    }
+
+    &__drop-heading_high{
+        margin-top: 105px;
+        padding-top: 0;
+    }
+
+    &__drop-box_tall{
+        margin-top: 41px;
+        max-width: 452px;
+    }
+
+    &__drop-box_upright{
+        margin-top: 41px;
+        max-width: 421px;
+    }
+
+    &__drop-box_inside{
+        max-width: 100%;
+    }
+
+    &__drop-box_mini{
+        max-width: 316px;
+    }
+
+    &__drop-heading_small{
+        padding-top: 20px;
+    }
+
+    &__drop-heading_pad{
+        padding-top: 76px;
+    }
+
+    &__drop-box_center{
+        max-width: 443px;
+    }
+
+    &__drop-box_right{
+        max-width: 535px;
+    }
+
+    &__wrapper{
+        @include mar;
+
+        &-heading{
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: #323264;
+            font-weight: 700;
+            margin: 30px 0px 30px 0px; 
+        }
+    }
+
+    &__item{
+        border: none;
+        padding: 0px;
+        margin: 0;
+        width: 25%;
+        display: block;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__p-logo{
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+
+    &__link_biz{
+        background-color: #143646;
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link_blue{
+        background-color: #1C4280;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    &__link_tap{
+        background-color: #F48B30;
+        padding-bottom: 38px;
+        padding-top: 38px;
+    }
+
+    &__link_look{
+        background-color: #9E4DC3;
+        padding-bottom: 39px;
+        padding-top: 39px;
+    }
+
+    &__link_gear{
+        background-color: #F48B30;
+        padding-bottom: 38px;
+        padding-top: 38px;
+    }
+
+    &__link_ad{
+        background-color: #E2E2E4;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    &__link_click{
+        background-color: #C71C36;
+        padding-top: 30px;
+        padding-bottom: 29px;
+    }
+
+    &__link_eco{
+        background-color: #DCF3F9;
+        padding-bottom: 22px;
+        padding-top: 22px;
+    }
+
+    &__link_infra{
+        background-color: #EAEAEA;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    
+    &__link_city{
+        background-color: #282240;
+        padding-top: 41px;
+        padding-bottom: 41px;
+    }
+
+    &__link_art{
+        background-color: #1D4568;
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+
+    &__link_ultimate{
+        background-color: #000000;
+        padding-top: 13px;
+        padding-bottom: 12px;
+    }
+
 }
