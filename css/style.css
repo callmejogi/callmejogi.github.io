@@ -287,7 +287,7 @@ input:checked ~ label {
   -webkit-text-fill-color: transparent;
 }
 
-.test.swiper-container {
+.test {
   display: none;
 }
 
@@ -467,12 +467,12 @@ input:checked ~ label {
 .main__drop-box_right {
   max-width: 535px;
 }
-.main__wrapper {
-  max-width: 1320px;
-  margin-left: auto;
+.main__wrap {
+  max-width: 1440px;
   margin-right: auto;
+  margin-left: auto;
 }
-.main__wrapper-heading {
+.main__wrap-heading {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -564,18 +564,14 @@ input:checked ~ label {
   padding-bottom: 12px;
 }
 
-.slider-container {
-  padding-bottom: 36px;
-  display: flex;
-  flex-wrap: wrap;
+.swiper {
+  overflow: hidden;
+  position: relative;
 }
 
 .slider-wrapper {
   margin-bottom: 20px;
-}
-
-.slider-pagination {
-  width: 100%;
+  padding-bottom: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -638,9 +634,9 @@ input:checked ~ label {
   }
 
   .main {
-    padding-right: 20px;
-    padding-left: 20px;
     padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .main__icon {
     display: none;
@@ -711,12 +707,21 @@ input:checked ~ label {
   .main__drop-heading_high {
     margin-top: 0;
   }
-  .main__wrapper {
+  .main__wrap {
     flex-direction: column;
     align-items: center;
   }
   .main__item {
-    width: 33%;
+    width: 33.3333333333%;
+  }
+  .main__section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .swiper {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -835,31 +840,27 @@ input:checked ~ label {
     text-align: left;
   }
 
-  .test.swiper-container {
-    display: flex;
-    flex-wrap: wrap;
+  .test {
+    display: block;
+  }
+
+  .swiper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swiper-wrapper {
     padding-bottom: 36px;
   }
-  .test.swiper-container.swiper-pagination-bullet-active {
+
+  .swiper-pagination-bullet-active {
     background-color: #24A3FF;
-  }
-
-  .swiper-slide {
-    width: 100%;
-  }
-
-  .test.swiper-wrapper {
-    justify-content: space-between;
   }
 
   .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
     background-color: #24A3FF;
-  }
-
-  .test.swiper-pagination {
-    width: 100%;
   }
 
   label {
@@ -909,6 +910,46 @@ input:checked ~ label {
   .main__item {
     width: 50%;
   }
+  .main__p-logo {
+    object-fit: cover;
+  }
+  .main__p-logo_hillel {
+    height: 35px;
+  }
+  .main__p-logo_wanna {
+    height: 27px;
+    width: 168px;
+  }
+  .main__p-logo_tap {
+    height: 40px;
+  }
+  .main__p-logo_3d {
+    height: 34px;
+  }
+  .main__p-logo_orange {
+    height: 36px;
+  }
+  .main__p-logo_adt {
+    height: 33px;
+  }
+  .main__p-logo_clic {
+    height: 49px;
+  }
+  .main__p-logo_lease {
+    height: 54px;
+  }
+  .main__p-logo_inf {
+    height: 39px;
+  }
+  .main__p-logo_park {
+    height: 28px;
+  }
+  .main__p-logo_stud {
+    height: 33px;
+  }
+  .main__p-logo_ulti {
+    height: 70px;
+  }
   .main__link_blue {
     padding-top: 28px;
     padding-bottom: 27px;
@@ -926,6 +967,42 @@ input:checked ~ label {
     padding-bottom: 25px;
     padding-right: 13px;
     padding-left: 14px;
+  }
+  .main__link_look {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .main__link_gear {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .main__link_ad {
+    padding-top: 29px;
+    padding-bottom: 28px;
+  }
+  .main__link_click {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+  .main__link_eco {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .main__link_infra {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+  .main__link_city {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+  .main__link_art {
+    padding-top: 29px;
+    padding-bottom: 28px;
+  }
+  .main__link_ultimate {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .slider-wrapper {

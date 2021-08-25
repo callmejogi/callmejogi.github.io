@@ -151,8 +151,8 @@
                 </p>
             </div>
     
-            <div class="test swiper-container">
-                <div class="test swiper-wrapper">
+            <div class="test swiper">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <input type="checkbox" id="checkbox1" hidden>
                     <label for="checkbox1">Послідовні</label>
@@ -197,9 +197,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="test swiper-pagination"></div>
+                <div class="pag swiper-pagination"></div>
               </div>
-    
+
             <div class="box__services">
                 <div class="box__services_arrow-link">
                     <a href="#" class="box__services-link">
@@ -313,7 +313,7 @@
     </section>
 
     <div class="main">
-        <div class="slider-container swiper-container">
+        <div class="swiper">
             <div class="slider-wrapper swiper-wrapper">
               <div class="swiper-slide">
                 <div class="main__block">
@@ -415,8 +415,10 @@
                 </div>
                 </div>
             </div>
+            
             <div class="slider-pagination swiper-pagination"></div>
         </div>
+
         <section class="main__section">
             <div class="main__one-box">
                 <div class="main__cases">
@@ -480,8 +482,8 @@
             </div>
         </section>
 
-        <section class="main__wrapper">
-            <h3 class="main__wrapper-heading">
+        <section class="main__wrap">
+            <h3 class="main__wrap-heading">
                 ВЖЕ ДОВІРЯЮТЬ НАМ
             </h3>
 
@@ -490,87 +492,79 @@
                     <ul class="main__list">
                         <li class="main__item">
                             <a href="#" class="main__link main__link_blue">
-                                <picture class="main__picture">
-                                    <source media="(max-width: 767px)" srcset="images/hillel-small.png" >
-                                    <img src="./images/hillel.png" alt="hillel" class="main__p-logo">
-                                </picture>
+                                <img src="./images/hillel.png" alt="hillel" class="main__p-logo main__p-logo_hillel">
                             </a>
                         </li>
                         <li class="main__item main__item_biz">
                             <a href="#" class="main__link main__link_biz">
-                                <picture class="main__picture">
-                                    <source media="(max-width: 767px)" srcset="images/biz-small.png" >
-                                    <img src="./images/wannabiz.png" alt="wannabiz" class="main__p-logo">
-                                </picture>
-                        </a>
+                                <img src="./images/wannabiz.png" alt="wannabiz" class="main__p-logo main__p-logo_wanna">
+                            </a>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_tap">
-                                    <img src="./images/tapgrine.svg" alt="tapgerine" class="main__p-logo">
+                                    <img src="./images/tapgrine.svg" alt="tapgerine" class="main__p-logo main__p-logo_tap">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_look">
-                                    <img src="./images/3dlook.png" alt="3dlook" class="main__p-logo">
+                                    <img src="./images/3dlook.png" alt="3dlook" class="main__p-logo main__p-logo_3d">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
-                            <picture class="main__picture">
                                 <a href="#" class="main__link main__link_gear">
-                                    <img src="./images/orangear.svg" alt="orangear" class="main__p-logo">
+                                    <img src="./images/orangear.svg" alt="orangear" class="main__p-logo main__p-logo_orange">
                                 </a>
-                            </picture>
                         </li>
                         <li class="main__item">
-                            <picture class="main__picture">
+
                                 <a href="#" class="main__link main__link_ad">
-                                    <img src="./images/adtelligent.svg" alt="adtelligent" class="main__p-logo">
+                                    <img src="./images/adtelligent.svg" alt="adtelligent" class="main__p-logo main__p-logo_adt">
                                 </a>
-                            </picture>
+
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_click">
-                                    <img src="./images/clickky.svg" alt="clickky" class="main__p-logo">
+                                    <img src="./images/clickky.svg" alt="clickky" class="main__p-logo main__p-logo_clic">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_eco">
-                                    <img src="./images/ecoleasing.svg" alt="ecoleasing" class="main__p-logo">
+                                    <img src="./images/ecoleasing.svg" alt="ecoleasing" class="main__p-logo main__p-logo_lease">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_infra">
-                                    <img src="./images/infratek.png" alt="infratek" class="main__p-logo">
+                                    <img src="./images/infratek.png" alt="infratek" class="main__p-logo main__p-logo_inf">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_city">
-                                    <img src="./images/citypark.svg" alt="city park" class="main__p-logo">
+                                    <img src="./images/citypark.svg" alt="city park" class="main__p-logo main__p-logo_park">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_art">
-                                    <img src="./images/art.png" alt="art-print studio" class="main__p-logo">
+                                    <img src="./images/art.png" alt="art-print studio" class="main__p-logo main__p-logo_stud">
                                 </a>
                             </picture>
                         </li>
                         <li class="main__item">
                             <picture class="main__picture">
                                 <a href="#" class="main__link main__link_ultimate">
-                                    <img src="./images/ult.png" alt="ultimate card" class="main__p-logo">
+                                    <img src="./images/ult.png" alt="ultimate card" class="main__p-logo main__p-logo_ulti">
                                 </a>
                             </picture>
                         </li>
@@ -582,12 +576,10 @@
 
         
 
-
-
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiper = new Swiper('.swiper', {
 
     pagination: {
     el: '.swiper-pagination',

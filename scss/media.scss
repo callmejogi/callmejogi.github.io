@@ -55,9 +55,9 @@
     }
 
     .main{
-        padding-right: 20px;
-        padding-left: 20px;
         padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
 
         &__icon{
             display: none;
@@ -148,15 +148,24 @@
             }
         }
 
-        &__wrapper{
+        &__wrap{
             flex-direction: column;
             align-items: center;
         }
 
         &__item{
-            width: 33%;
+            width: 33.3333333333333%;
         }
 
+        &__section{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    .swiper{
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
 
@@ -302,21 +311,21 @@
         text-align: left;
     }
 
-    .test.swiper-container{
-        display: flex;
-        flex-wrap: wrap;
+    .test{
+        display: block;
+    }
+
+    .swiper{
+        overflow: hidden;
+        position: relative;
+    }
+
+    .swiper-wrapper{
         padding-bottom: 36px;
-        &.swiper-pagination-bullet-active{
-            background-color: #24A3FF;
-        }
     }
 
-    .swiper-slide{
-        width: 100%;
-    }
-
-    .test.swiper-wrapper{
-        justify-content: space-between;
+    .swiper-pagination-bullet-active{
+        background-color: #24A3FF;
     }
 
     .swiper-pagination-bullet{
@@ -325,9 +334,7 @@
         background-color:#24A3FF;
     }
 
-    .test.swiper-pagination{
-        width: 100%;
-    }
+
 
     label{
         background: $text_pink ;
@@ -384,7 +391,58 @@
             width: 50%;
         }
 
+        &__p-logo{
+            object-fit: cover;
+        }
 
+        &__p-logo_hillel{
+            height: 35px;
+        }
+
+        &__p-logo_wanna{
+            height: 27px;
+            width: 168px;
+        }
+
+        &__p-logo_tap{
+            height: 40px;
+        }
+
+        &__p-logo_3d{
+            height: 34px;
+        }
+
+        &__p-logo_orange{
+            height: 36px;
+        }
+
+        &__p-logo_adt{
+            height: 33px;
+        }
+
+        &__p-logo_clic{
+            height: 49px;
+        }
+
+        &__p-logo_lease{
+            height: 54px;
+        }
+
+        &__p-logo_inf{
+            height: 39px;
+        }
+
+        &__p-logo_park{
+            height: 28px;
+        }
+
+        &__p-logo_stud{
+            height: 33px;
+        }
+
+        &__p-logo_ulti{
+            height: 70px;
+        }
 
         &__link_blue{
             padding-top: 28px;
@@ -405,6 +463,51 @@
             padding-bottom: 25px;
             padding-right: 13px;
             padding-left: 14px;
+        }
+
+        &__link_look{
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
+
+        &__link_gear{
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }
+
+        &__link_ad{
+            padding-top: 29px;
+            padding-bottom: 28px;
+        }
+
+        &__link_click{
+            padding-top: 21px;
+            padding-bottom: 20px;
+        }
+
+        &__link_eco{
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        &__link_infra{
+            padding-top: 26px;
+            padding-bottom: 25px;
+        }
+
+        &__link_city{
+            padding-top: 31px;
+            padding-bottom: 31px;
+        }
+
+        &__link_art{
+            padding-top: 29px;
+            padding-bottom: 28px;
+        }
+
+        &__link_ultimate{
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
     }

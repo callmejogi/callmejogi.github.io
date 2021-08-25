@@ -156,8 +156,10 @@
         max-width: 535px;
     }
 
-    &__wrapper{
-        @include mar;
+    &__wrap{
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
 
         &-heading{
             font-size: 14px;

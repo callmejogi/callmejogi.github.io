@@ -209,7 +209,7 @@ input:checked ~ label{
     @include pink-text;
 }
 
-.test.swiper-container{
+.test{
     display: none;
 }
 
@@ -217,18 +217,14 @@ input:checked ~ label{
 
 @import 'main';
 
-.slider-container{
-    padding-bottom: 36px;
-    display: flex;
-    flex-wrap: wrap;
+.swiper{
+    overflow: hidden;
+    position: relative;
 }
 
 .slider-wrapper{
     margin-bottom: 20px;
-}
-
-.slider-pagination{
-    width: 100%;
+    padding-bottom: 20px;
 }
 
 .swiper-pagination-bullet{
@@ -243,7 +239,9 @@ input:checked ~ label{
     opacity: 1;
 }
 
-
+.slider-pagination{
+    
+}
 
 
 @import 'media';
