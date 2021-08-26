@@ -1,6 +1,5 @@
 .main{
-    padding-right: 10px;
-    padding-left: 10px;
+
     &__block{
         display: flex;
         background-color: $grey_bg;
@@ -115,6 +114,8 @@
         flex-wrap: wrap;
         @include mar;
         justify-content: center;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     &__drop-heading_high{

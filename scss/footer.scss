@@ -1,0 +1,77 @@
+.footer{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:$grey_bg;
+    &__container{
+        @include mar;
+        padding-top: 35px;
+
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        padding-bottom: 22px;
+    }
+
+    &__link-adress{
+       @include link;
+        font-size: 16px;
+        color: #323264;
+        line-height: 19px;
+        font-weight: 400;
+    }
+
+    &__map{
+        @include link;
+        font-weight: 700;
+        color:$blue;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        line-height: 14px;
+    }
+
+    &__dot{
+        margin-left: 31px;
+        margin-right: 10px;
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+    }
+
+    &__number{
+        @include link;
+        color: #323264;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 5px;
+    }
+
+    &__contact{
+        @include link;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $blue;
+    }
+
+    &__svg{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    &__facebook{
+        margin-right: 5px;
+    }
+
+    &__copyright{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #B3B3BA;
+        margin-left: auto;
+    }
+}

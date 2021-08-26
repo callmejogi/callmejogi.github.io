@@ -220,6 +220,8 @@ input:checked ~ label{
 .swiper{
     overflow: hidden;
     position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .slider-wrapper{
@@ -239,9 +241,8 @@ input:checked ~ label{
     opacity: 1;
 }
 
-.slider-pagination{
-    
-}
+@import 'body.scss';
 
+@import 'footer';
 
 @import 'media';
