@@ -198,6 +198,56 @@
     .footer{
         padding-left: 20px;
         padding-right: 20px;
+
+        &__menu{
+            flex-direction: column;
+        }
+
+        &__nav{
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+
+        &__copyright{
+            margin-left: 0;
+            text-align: center;
+        }
+
+        &__fullstop{
+            display: none;
+        }
+
+        &__dot{
+            display: none;
+        }
+
+        &__svg{
+            display: none;
+        }
+
+        &__container{
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 118px;
+        }
+
+        &__link-adress{
+            padding-bottom: 10px;
+        }
+
+        &__facebook{
+            margin-right: 0;
+            padding-bottom: 20px;
+        }
+
+        &__number{
+            margin-left: 0;
+            padding-bottom: 20px;
+        }
+
+        &__contact{
+            padding-bottom: 20px;
+        }
     }
 
     

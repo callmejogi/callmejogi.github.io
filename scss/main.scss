@@ -21,6 +21,13 @@
         font-size: 14px;
         line-height: 17px;
         @include blue-effect;
+        &:hover{
+            color: #0085FF;
+        }
+
+        &:active{
+            color: #006CCF;
+        }
     }
 
     &__svg{
