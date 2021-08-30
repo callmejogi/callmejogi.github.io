@@ -250,7 +250,64 @@
         }
     }
 
-    
+    .header-team{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+
+    .team-member{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        &__team-picture{
+            text-align: center;
+        }
+
+        &__content{
+            padding-bottom: 0;
+            padding-top: 20px;
+        }
+
+        &__box{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__ceo{
+            padding-bottom: 10px;
+        }
+
+        &__link{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &__name{
+            font-size: 32px;
+            line-height: 38px;
+            padding-bottom: 13px;
+        }
+
+        &__text{
+            padding-bottom: 20px;
+        }
+
+        &__article{
+            padding-bottom: 20px;
+        }
+    }
+
+    .icon{
+        object-fit: cover;
+        height: 31px;
+    }
 
 }
 
@@ -656,5 +713,15 @@
 
     .equity{
         margin-bottom: 0;
+    }
+
+    .team-member__pic{
+
+
+        width: 100%;
+    }
+
+    .team-member__team-picture{
+        width: 100%;
     }
 }

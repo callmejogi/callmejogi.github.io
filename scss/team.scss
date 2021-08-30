@@ -1,0 +1,102 @@
+.header{
+    
+    &__lang_team{
+        color: $color_grey;
+    }
+
+    &__link_team-adress{
+        color: $color_grey;
+    }
+
+    &__blue-link{
+        color: $blue;
+    }
+
+    &__blue-link_active{
+        color: #F0145A;
+        border-bottom: 2px solid #F0145A;
+    }
+}
+
+.team-member{
+    max-width: 1095px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 82px;
+
+    &__name{
+        @include pink-text;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+        padding-top: 20px;
+    }
+
+    &__team-picture{
+        margin-right: 41px;
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+        border-bottom: solid #E6E6F0;
+        padding-bottom: 20px;
+    }
+
+    &__link{
+        font-size: 16px;
+        color: $blue;
+        @include link;
+        font-weight: 400;
+        line-height: 19px;
+        &:hover{
+            color: #0085FF;
+        }
+
+        &:active{
+            color: #006CCF;
+        }
+    }
+
+    &__ceo{
+        font-size: 16px;
+        line-height: 22px;
+        color: $color_grey;
+    }
+
+    &__content{
+        padding-bottom: 80px;
+        padding-top: 40px;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 40px;
+    }
+
+    &__heading{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        color: #323264;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    &__article{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 40px;
+    }
+
+    &__exp{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+}
